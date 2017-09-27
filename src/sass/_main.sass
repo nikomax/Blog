@@ -30,36 +30,44 @@
 		margin-right: 0
 
 .item
-  +r(768)
-  	margin-left: 10px
-
-.item__title
-  font-family: $theme_font
-  color: $theme_color
-  font-size: 12px
-
-.item__link
-  display: inline-block
-  color: #bababa
-  font-size: 12px
-  margin: 10px 0 15px 0
-  font-family: $text_font
+	+r(768)
+		margin-left: 10px
+	&__title
+		font-family: $theme_font
+		color: $theme_color
+		font-size: 12px
+	&__link
+		display: inline-block
+		color: #bababa
+		font-size: 12px
+		margin: 10px 0 15px 0
+		font-family: $text_font
 
 .topic
-  width: 75%
-  +r(768)
-  	width: 100%
+	width: 75%
+	+r(768)
+		width: 100%
+	&__desc
+		font-family: $text_font
+		font-size: 12px
+		p
+			margin-top: 25px
+			color: $text_color
+
+.topic_100
+  width: 100%
 
 .topic__heading
   font-size: 18px
   font-family: $theme_font
   color: $theme_color
 
-.topic__desc
-	font-family: $text_font
-	p
-		margin-top: 25px
-		color: $text_color
+.site
+  color: #a0a0a0
+  font-family: "Myriad Pro", sans-serif
+  font-size: 12px
+  font-weight: 400
+  line-height: 18px
 
 .more
   color: $text_color
@@ -87,28 +95,24 @@
   line-height: 18px
 
 .icon
-  width: 75px
-  height: 75px
-  background-position: center
-  background-repeat: no-repeat
-  background-color: $theme_color
-  position: absolute
-  top: 0
-  left: -85px
-  +r(1110)
-  	display: none
-
-.icon_photo
-  background-image: url("../img/photo.png")
-
-.icon_file
-  background-image: url("../img/file.png")
-
-.icon_quote
-  background-image: url("../img/quote.png")
-
-.icon_link
-  background-image: url("../img/link.png")
+	width: 75px
+	height: 75px
+	background-position: center
+	background-repeat: no-repeat
+	background-color: $theme_color
+	position: absolute
+	top: 0
+	left: -85px
+	+r(1110)
+		display: none
+	&_photo
+		background-image: url("../img/photo.png")
+	&_file
+		background-image: url("../img/file.png")
+	&_quote
+		background-image: url("../img/quote.png")
+	&_link
+		background-image: url("../img/link.png")
 
 .aside
 	margin-left: 5%
@@ -116,16 +120,37 @@
 	+r(768)
 		margin: 40px 0 0 0
 		width: 100%
-
-.aside__heading
-  display: flex
-  flex-direction: row
-  justify-content: flex-start
-  align-items: stretch
-  font-family: $theme_font
-  color: $theme_color
-  h3
-  	margin-right: 15px
+	&__heading
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: stretch
+		font-family: $theme_font
+		color: $theme_color
+		h3
+			margin-right: 15px
+	&__content
+		font-family: $text_font
+		margin: 20px 0 35px 0
+		color: $text_color
+		a
+			color: $text_color
+	&__image
+		display: inline-block
+		height: 50px
+		width: 50px
+		border: 2px solid red
+		background-color: $theme_second_color
+		a
+			display: block
+			height: 100%
+			width: 100%
+		+r(873)
+			height: 80px
+			width: 80px
+		+r(355)
+			height: 110px
+			width: 110px
 
 .dots
   background-image: url("../img/dots.png")
@@ -133,39 +158,17 @@
   height: inherit
   flex-grow: 1
 
-.aside__content
-  font-family: $text_font
-  margin: 20px 0 35px 0
-  color: $text_color
-  a
-   color: $text_color
-
-.aside__image
-	display: inline-block
-	height: 50px
-	width: 50px
-	border: 2px solid red
-	background-color: $theme_second_color
-	+r(873)
-		height: 80px
-		width: 80px
-	+r(355)
-		height: 110px
-		width: 110px
-
 .pagination
-  display: flex
-
-.pagination__item
-  margin-right: 5px
-
-.pagination__link
-	font-size: 14px
-	font-family: $theme_font
-	color: white
-	background: $theme_second_color
-	padding: 10px 15px
-	&_active
-	  background-color: $theme_color
-	&:hover
-	  background-color: $theme_color
+	display: flex
+	&__item
+		margin-right: 5px
+	&__link
+		font-size: 14px
+		font-family: $theme_font
+		color: white
+		background: $theme_second_color
+		padding: 10px 15px
+		&_active
+		  	background-color: $theme_color
+		&:hover
+		  	background-color: $theme_color
