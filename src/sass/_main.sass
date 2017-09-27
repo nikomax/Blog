@@ -1,0 +1,171 @@
+.main
+  margin-top: 25px
+
+.sections
+  width: 70%
+  +r(768)
+  	width: 100%
+
+.section
+  position: relative
+
+.content
+  margin-top: 25px
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  flex-wrap: wrap
+
+.image
+	width: 100%
+	img
+		width: inherit
+
+.info
+	width: 22%
+	margin-right: 3%
+	+r(768)
+		display: flex
+		width: 100%
+		margin-right: 0
+
+.item
+  +r(768)
+  	margin-left: 10px
+
+.item__title
+  font-family: $theme_font
+  color: $theme_color
+  font-size: 12px
+
+.item__link
+  display: inline-block
+  color: #bababa
+  font-size: 12px
+  margin: 10px 0 15px 0
+  font-family: $text_font
+
+.topic
+  width: 75%
+  +r(768)
+  	width: 100%
+
+.topic__heading
+  font-size: 18px
+  font-family: $theme_font
+  color: $theme_color
+
+.topic__desc
+	font-family: $text_font
+	p
+		margin-top: 25px
+		color: $text_color
+
+.more
+  color: $text_color
+
+.bottomline
+  height: 13px
+  max-width: 659px
+  margin: 55px 0
+  +r(768)
+  	margin: 20px 0
+
+.quote
+  font-family: $text_font
+  background-color: whitesmoke
+  display: flex
+  padding: 20px
+  font-style: italic
+
+.quote-icon
+  margin: 20px 20px 0 0
+  color: $theme_color
+  font-family: Georgia
+  font-size: 72px
+  font-weight: 400
+  line-height: 18px
+
+.icon
+  width: 75px
+  height: 75px
+  background-position: center
+  background-repeat: no-repeat
+  background-color: $theme_color
+  position: absolute
+  top: 0
+  left: -85px
+  +r(1110)
+  	display: none
+
+.icon_photo
+  background-image: url("../img/photo.png")
+
+.icon_file
+  background-image: url("../img/file.png")
+
+.icon_quote
+  background-image: url("../img/quote.png")
+
+.icon_link
+  background-image: url("../img/link.png")
+
+.aside
+	margin-left: 5%
+	width: 25%
+	+r(768)
+		margin: 40px 0 0 0
+		width: 100%
+
+.aside__heading
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: stretch
+  font-family: $theme_font
+  color: $theme_color
+  h3
+  	margin-right: 15px
+
+.dots
+  background-image: url("../img/dots.png")
+  width: inherit
+  height: inherit
+  flex-grow: 1
+
+.aside__content
+  font-family: $text_font
+  margin: 20px 0 35px 0
+  color: $text_color
+  a
+   color: $text_color
+
+.aside__image
+	display: inline-block
+	height: 50px
+	width: 50px
+	border: 2px solid red
+	background-color: $theme_second_color
+	+r(873)
+		height: 80px
+		width: 80px
+	+r(355)
+		height: 110px
+		width: 110px
+
+.pagination
+  display: flex
+
+.pagination__item
+  margin-right: 5px
+
+.pagination__link
+	font-size: 14px
+	font-family: $theme_font
+	color: white
+	background: $theme_second_color
+	padding: 10px 15px
+	&_active
+	  background-color: $theme_color
+	&:hover
+	  background-color: $theme_color

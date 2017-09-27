@@ -1,0 +1,13 @@
+<header class="header">
+  <div class="container container_flex container_center">
+    <a href="#" class="header__logo">
+      <span>Jet</span>ro
+    </a>
+    <ul class="nav header__nav">
+      {% import "data/data.html" as list %}
+      {% for item in list.list %}
+      <li class="nav__item"><a class="nav__link {{item.active}}" href="#">{{item.title}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</header>
